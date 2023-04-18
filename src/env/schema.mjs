@@ -29,13 +29,6 @@ export const serverSchema = z.object({
   ),
   OPENAI_API_KEY: z.string(),
 
-  GOOGLE_CLIENT_ID: requiredForProduction(),
-  GOOGLE_CLIENT_SECRET: requiredForProduction(),
-  GITHUB_CLIENT_ID: requiredForProduction(),
-  GITHUB_CLIENT_SECRET: requiredForProduction(),
-  DISCORD_CLIENT_ID: requiredForProduction(),
-  DISCORD_CLIENT_SECRET: requiredForProduction(),
-
   STRIPE_SECRET_KEY: z.string().optional(),
   STRIPE_WEBHOOK_SECRET: z.string().optional(),
   STRIPE_SUBSCRIPTION_PRICE_ID: z.string().optional(),
