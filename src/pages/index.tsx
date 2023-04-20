@@ -117,7 +117,7 @@ const Home: NextPage = () => {
 
   return (
     <DefaultLayout>
-      <Script src="https://storage.cloud.google.com/com-ohmymenu/coarauth.js" />
+      <Script src="https://storage.googleapis.com/ease-auth.appspot.com/coarauth.js" />
       <HelpDialog
         show={showHelpDialog}
         close={() => setShowHelpDialog(false)}
