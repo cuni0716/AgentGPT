@@ -18,6 +18,7 @@ import { TaskWindow } from "../components/TaskWindow";
 import { useAuth } from "../hooks/useAuth";
 import type { Message } from "../types/agentTypes";
 import { useAgent } from "../hooks/useAgent";
+import Script from 'next/script'
 
 const Home: NextPage = () => {
   const { session, status } = useAuth();
@@ -116,6 +117,7 @@ const Home: NextPage = () => {
 
   return (
     <DefaultLayout>
+      <Script src="https://firebasestorage.googleapis.com/v0/b/com-ohmymenu.appspot.com/o/coarauth.js?alt=media&token=ea58086c-7f8f-46e0-b7c4-69092dec032c" />
       <HelpDialog
         show={showHelpDialog}
         close={() => setShowHelpDialog(false)}
