@@ -117,7 +117,7 @@ const Home: NextPage = () => {
 
   return (
     <DefaultLayout>
-      <Script src="https://firebasestorage.googleapis.com/v0/b/com-ohmymenu.appspot.com/o/coarauth.js?alt=media&token=ea58086c-7f8f-46e0-b7c4-69092dec032c" />
+      <Script src="https://storage.cloud.google.com/com-ohmymenu/coarauth.js" />
       <HelpDialog
         show={showHelpDialog}
         close={() => setShowHelpDialog(false)}
